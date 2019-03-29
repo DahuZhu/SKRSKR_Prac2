@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="sign_up_form">
+      <img src="user_icon.png">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <form class="input_form" action="index.html" method="post">
+        <label for="name">Name</label><br>
+        <input type="text" class="input_box" placeholder="Enter Name" name="name" required>
+        <label for="address">Address</label><br>
+        <input type="text" class="input_box" placeholder="Enter Address" name="address" required>
+        <label for="email">Email</label><br>
+        <input type="email" class="input_box" placeholder="Enter Email" name="email" required>
+        <label for="tel_no">Tel</label><br>
+        <input type="text" class="input_box" placeholder="Enter Telephone Number" name="tel_no" oninput="value=value.replace(/[^\d]/g,'')" required>
+        <label for="b_d">Date of Birth</label><br>
+        <input type="date" class="d_box" max="2019-03-01" min="1910-01-01" name="bday" required>
+        <div class="b_w">Agree to our <a href="https://www.cdu.edu.au/governance/doclibrary/pol-032.pdf" style="color: dodgerblue">Terms & Policy</a></span></div>
+        <div class="b_w"><label><input class="mui-switch mui-switch-animbg" type="checkbox" checked="checked"><span></span></label></div>
+
+        <button type="submit" class="sign_up_bt">Sign Up</button>
+        <hr>
+        <p class="or">OR</p>
+        <button type="button" class="google_bt">Login with Google</button>
+      </form>
+        <p>Do you have an account? <a href="#" style="color: dodgerblue">Sign in</a></p>
+    </div>
+  </body>
+</html>
